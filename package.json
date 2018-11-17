@@ -1,0 +1,38 @@
+{
+  "name": "restaurantmanagement",
+  "version": "0.1.0",
+  "private": true,
+  "engines": {
+    "npm":"6.4.1",
+    "node":"10.13.0"
+  },
+  "dependencies": {
+    "axios": "^0.18.0",
+    "express": "^4.16.4",
+    "html-pdf": "^2.2.0",
+    "phantomjs-prebuilt": "^2.1.13",
+    "react": "^16.6.0",
+    "react-dom": "^16.6.0",
+    "react-router-dom": "^4.3.1",
+    "react-scripts": "2.1.1",
+    "socket.io": "^2.1.1",
+    "socket.io-client": "^2.1.1"
+  },
+  "scripts": {
+    "start": "node server.js",
+    "heroku-postbuild": "cd server && npm install && npm run build",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
+  },
+  "eslintConfig": {
+    "extends": "react-app"
+  },
+  "proxy": "http://localhost:8088",
+  "browserslist": [
+    ">0.2%",
+    "not dead",
+    "not ie <= 11",
+    "not op_mini all"
+  ]
+}
